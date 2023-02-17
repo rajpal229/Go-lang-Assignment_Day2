@@ -8,7 +8,7 @@ import (
 func main() {
 	//Ques3
 	var n, stake, trails, lostCount, wonCount, goal, numOfTimesWon, totalBets int
-	fmt.Print("Enter Number of times to run the Stimulation: ")
+	fmt.Print("Enter Number of times to run the Simulation: ")
 	fmt.Scan(&n)
 	fmt.Print("Enter Stake amount: ")
 	fmt.Scan(&stake)
@@ -16,7 +16,7 @@ func main() {
 	fmt.Print("Enter Goal: ")
 	fmt.Scan(&goal)
 	for i := 0; i < n; i++ {
-		fmt.Println("\nStimulation:", i+1, "\n")
+		fmt.Println("\nSimulation:", i+1, "\n")
 		stake = temp
 		for true {
 			fmt.Println("------bet placed------")
@@ -65,7 +65,7 @@ func main() {
 		lostCount = 0
 		wonCount = 0
 	}
-	fmt.Println("Number of times won in Stimulation:", numOfTimesWon)
+	fmt.Println("Number of times won in Simulation:", numOfTimesWon)
 	fmt.Println("Percent win in Stimulation:", float64(numOfTimesWon)*100/float64(n))
-	fmt.Println("Avg number of bets made per stimulation:", totalBets/n)
+	fmt.Println("Avg number of bets made per simulation:", totalBets/n)
 }
